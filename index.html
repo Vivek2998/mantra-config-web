@@ -16,7 +16,11 @@
             height: 100%;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             color: #dbe8f4;
-            background: radial-gradient(ellipse at 50% 30%, #ffffff 0%, #eef2f8 100%);
+            background:
+                radial-gradient(ellipse at 50% 18%, rgba(86, 205, 227, 0.22) 0%, transparent 55%),
+                radial-gradient(ellipse at 12% 95%, rgba(118, 214, 194, 0.16) 0%, transparent 50%),
+                radial-gradient(ellipse at 88% 90%, rgba(30, 48, 71, 0.10) 0%, transparent 45%),
+                linear-gradient(168deg, #eaf3f8 0%, #d4e3ee 100%);
             background-attachment: fixed;
             overflow-x: hidden;
         }
@@ -25,20 +29,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 32px 16px;
+            padding: 32px 24px;
         }
 
         .card {
             width: 100%;
-            max-width: 460px;
+            max-width: 420px;
             background: #16263B;
             border: 1px solid rgba(95, 133, 175, 0.28);
             border-radius: 16px;
-            padding: 44px 36px 36px;
-            box-shadow: 0 16px 44px rgba(30, 48, 71, 0.20),
-                        0 4px 12px rgba(30, 48, 71, 0.10);
+            padding: 40px 32px 32px;
+            box-shadow: 0 18px 48px rgba(22, 38, 59, 0.22),
+                        0 4px 14px rgba(22, 38, 59, 0.10);
             text-align: center;
             animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Tighten the card on phones so it doesn't span almost the full width. */
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 32px;
+            }
+            .card {
+                max-width: 340px;
+                padding: 34px 24px 26px;
+            }
+            .check-icon {
+                width: 64px;
+                height: 64px;
+            }
+            .check-icon svg {
+                width: 32px;
+                height: 32px;
+            }
+            h1 {
+                font-size: 20px;
+            }
         }
 
         @keyframes fadeIn {
