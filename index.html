@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Confirmed — Mantra Config</title>
+    <meta name="robots" content="noindex,nofollow">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #dbe8f4;
+            background: radial-gradient(ellipse at 50% 35%, rgba(95, 133, 175, 0.12) 0%, transparent 65%),
+                        linear-gradient(180deg, #27384E 0%, #1E3047 45%, #16263B 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(20, 30, 45, 0.78);
+            border: 1px solid rgba(95, 133, 175, 0.28);
+            border-radius: 16px;
+            padding: 44px 36px 36px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .check-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #56cde3 0%, #2e9bb8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(86, 205, 227, 0.28);
+        }
+
+        .check-icon svg {
+            width: 38px;
+            height: 38px;
+            stroke: #0f2233;
+            stroke-width: 3.5;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            color: #f0f7ff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #8da4bf;
+            margin-bottom: 24px;
+            letter-spacing: 0.2px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(95, 133, 175, 0.22);
+            margin: 0 0 22px;
+        }
+
+        .body-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #c5d5e8;
+            margin-bottom: 16px;
+        }
+
+        .steps {
+            text-align: left;
+            margin: 18px 0 22px;
+            padding: 14px 18px;
+            background: rgba(20, 30, 45, 0.4);
+            border-left: 3px solid #56cde3;
+            border-radius: 6px;
+        }
+
+        .steps p {
+            font-size: 13px;
+            line-height: 1.65;
+            color: #b5c6dc;
+            margin-bottom: 8px;
+        }
+
+        .steps p:last-child {
+            margin-bottom: 0;
+        }
+
+        .steps strong {
+            color: #56cde3;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 11px;
+            color: #7d92ad;
+            letter-spacing: 0.3px;
+        }
+
+        .brand {
+            font-size: 11px;
+            color: #56cde3;
+            font-weight: 600;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <div class="brand">SS Innovations</div>
+        <div class="check-icon">
+            <svg viewBox="0 0 24 24"><polyline points="5 12 10 17 19 7"></polyline></svg>
+        </div>
+        <h1>Email Confirmed</h1>
+        <p class="subtitle">Mantra Configuration Manager</p>
+        <div class="divider"></div>
+        <p class="body-text">
+            Your email address has been verified. Your access request has been
+            forwarded to an administrator.
+        </p>
+        <div class="steps">
+            <p><strong>What happens next?</strong></p>
+            <p>An administrator will review your request and approve your access.</p>
+            <p>You'll receive a confirmation email once your account is approved.</p>
+            <p>After approval, open the Mantra Configuration Manager app to sign in.</p>
+        </div>
+        <p class="body-text" style="font-size: 13px; color: #8da4bf;">
+            You can safely close this tab.
+        </p>
+        <p class="footer">
+            &copy; SS Innovations &middot; Mantra Configuration Manager
+        </p>
+    </main>
+</body>
+</html>
